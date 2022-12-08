@@ -3,11 +3,11 @@ const { DateTime } = require('luxon'); //lightweight date formatter
 module.exports = function (eleventyConfig) {
 
   //adding javascript-may not be needed
-  // eleventyConfig.addPassthroughCopy("index.js");
+  eleventyConfig.addPassthroughCopy("/index.js");
 
 
   // Copy the `css` directory to the output
-    eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('css');
 
   // Watch the `css` directory for changes
   eleventyConfig.addWatchTarget('css');

@@ -15,10 +15,10 @@ layout: layouts/base.njk
 <section class="postlist mt-3 pt-3">
   <div class="container">
     <h2 class="title has-text-centered mt-3 mb-6">Recent posts</h2>
-    <div class="columns">
+    <div class="columns is-multiline is-variable is-8">
       {% for post in collections.post | reverse %}
-        {% if loop.index0 < 3 %}
-          <div class="column">
+        {# {% if loop.index0 < 3 %} #}
+          <div class="column is-4 needs-padding">
             <div class="card">
               <header class="card-header">
                 <p class="card-header-title">
@@ -35,10 +35,9 @@ layout: layouts/base.njk
               </footer>
             </div>
           </div>
-          {% endif %}
+          {# {% endif %} #}
       {% endfor %}
     </div>
   </div>
 </section>
 
-<script src="index.js"></script>

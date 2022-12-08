@@ -1,7 +1,9 @@
 //mobile menu toggle
-const burgerIcon = document.querySelector("#burger");
-const navbarMenu = document.querySelector("#nav-links");
+let burgerIcon = document.querySelector("#burger");
+let navbarMenu = document.querySelector("#nav-links");
 
 burgerIcon.addEventListener("click", () => {
     navbarMenu.classList.toggle("is-active");
 });
+
+//npx @11ty/eleventy --serve
