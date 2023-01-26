@@ -8,6 +8,7 @@
   <title>About Me</title>
 </head>
 <body>
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
   <header>
 
 <nav class="navbar is-light" role="navigation" aria-label="main navigation">
@@ -32,7 +33,22 @@
   </div>
 
 
-</nav></header>
+</nav>
+
+
+<script>
+  
+  
+//mobile menu toggle
+let burgerIcon = document.querySelector("#burger");
+let navbarMenu = document.querySelector("#nav-links");
+
+burgerIcon.addEventListener("click", () => {
+    navbarMenu.classList.toggle("is-active");
+    burgerIcon.classList.toggle("is-active");
+});
+
+</script></header>
   <main>
     
 <section class="hero is-medium is-primary is-bold">
@@ -52,6 +68,8 @@
 </section>
   </main>
 
-<script type="text/javascript" src="/index.js" defer></script>
+
+
+
 </body>
 </html>

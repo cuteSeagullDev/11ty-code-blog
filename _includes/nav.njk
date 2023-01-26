@@ -23,3 +23,10 @@
 
 
 </nav>
+
+{% set js %}
+  {% include "scripts/toggle.js" %}
+{% endset %}
+<script>
+  {{ js | safe }}
+</script>

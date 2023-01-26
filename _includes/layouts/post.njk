@@ -12,11 +12,12 @@ layout: layouts/base.njk
             Published on: <time datetime="{{ page.date }}">{{ page.date | readableDate }}</time>
           </p>
           {{ content | safe }}
+          <canvas id="renderCanvas"></canvas>
         </article>
       </div>
     </div>
-    {# <div>
-      <script type="text/javascript">console.log("my script ran")</script>
-    </div> #}
+    <div>
+
+    </div>
   </div>
 </section>

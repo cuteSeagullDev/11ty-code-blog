@@ -4,6 +4,12 @@
     padding: 25px 0px;
 }
 
+#renderCanvas {
+    width: 90%;
+    background-color: aquamarine;
+}
+
+
 @media (max-width: 1024px) {
     .desktop {
         display: none;

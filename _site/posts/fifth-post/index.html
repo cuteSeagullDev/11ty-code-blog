@@ -8,6 +8,7 @@
   <title>A Fifth Post</title>
 </head>
 <body>
+  <script src="https://cdn.babylonjs.com/babylon.js"></script>
   <header>
 
 <nav class="navbar is-light" role="navigation" aria-label="main navigation">
@@ -32,7 +33,22 @@
   </div>
 
 
-</nav></header>
+</nav>
+
+
+<script>
+  
+  
+//mobile menu toggle
+let burgerIcon = document.querySelector("#burger");
+let navbarMenu = document.querySelector("#nav-links");
+
+burgerIcon.addEventListener("click", () => {
+    navbarMenu.classList.toggle("is-active");
+    burgerIcon.classList.toggle("is-active");
+});
+
+</script></header>
   <main>
     
 <section class="page-layout">
@@ -46,14 +62,19 @@
           </p>
           <p>This is a fifth test post.</p>
 
+          <canvas id="renderCanvas"></canvas>
         </article>
       </div>
     </div>
-    
+    <div>
+
+    </div>
   </div>
 </section>
   </main>
 
-<script type="text/javascript" src="/index.js" defer></script>
+
+
+
 </body>
 </html>
